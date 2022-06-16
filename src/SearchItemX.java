@@ -34,7 +34,8 @@ public class SearchItemX {
         int x, i, n = arrayOne_.length, low = 0, high = n;
         for (i = 0; i < n; i++) {
             int r = binarySearch(arrayTwo_, arrayOne_[i], low, high);
-            if (binarySearch(arrayTwo_, arrayOne_[i], low, high) != -1) {
+            if (r != -1) {
+                //
                 output.add(arrayTwo_[r]);
             }
         }
