@@ -1,4 +1,5 @@
 import Arrays.Matrix.MatrixArray;
+import Arrays.Matrix.MatrixRotate;
 import BST.BinarySearchTree;
 
 import java.util.ArrayList;
@@ -16,8 +17,10 @@ public class Main {
                 System.out.printf("%s > exist \n", r);
 */
         // MatrixArray.matrix();
-        MatrixArray.printMatrixInOrder();
-        MatrixArray.matrixSpiralRecursive();
+       // MatrixArray.printMatrixInOrder();
+        //MatrixArray.matrixSpiralRecursive();
+
+        MatrixRotate.rotatingMatrix();
 
     }
 
