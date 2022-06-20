@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b42dfca0-e072-4f08-a479-48774fef3349" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BST/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BST/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Arrays/MatrixArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +69,14 @@
       <updated>1655317476234</updated>
       <workItem from="1655317477458" duration="3299000" />
       <workItem from="1655346820913" duration="429000" />
-      <workItem from="1655374363046" duration="4706000" />
+      <workItem from="1655374363046" duration="4999000" />
+      <workItem from="1655461086686" duration="3301000" />
+      <workItem from="1655493717965" duration="1216000" />
+      <workItem from="1655526436589" duration="2455000" />
+      <workItem from="1655567351886" duration="4789000" />
+      <workItem from="1655610333655" duration="320000" />
+      <workItem from="1655645416609" duration="98000" />
+      <workItem from="1655648423772" duration="3350000" />
     </task>
     <servers />
   </component>

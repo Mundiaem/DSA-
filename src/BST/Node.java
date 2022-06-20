@@ -8,7 +8,8 @@ package BST;
  */
 
 public class Node {
-    int data;
+    int data;// int marks;
+    // String name;
     Node left, right;
 
     public Node(int item) {

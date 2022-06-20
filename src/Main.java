@@ -1,3 +1,4 @@
+import Arrays.MatrixArray;
 import BST.BinarySearchTree;
 
 import java.util.ArrayList;
@@ -7,6 +8,17 @@ public class Main {
     public static void main(String[] args) {
 //        int[] results= new SearchItemX().qualifiedStudents();
 //        System.out.println(Arrays.toString(results));
+        ;
+/*
+                System.out.printf("%s > exist \n", r);
+*/
+        // MatrixArray.matrix();
+        MatrixArray.printMatrixInOrder();
+        MatrixArray.matrixSpiralRecursive();
+
+    }
+
+    private static void bst() {
         int[] arrayOne = {83, 54, 17, 46, 72, 31, 23, 55, 63, 49, 40, 21, 95, 36, 81, 39, 28, 79, 32, 72, 39, 10, 47, 94, 83, 74, 6, 53, 36, 94, 13, 30, 12, 62, 31, 16, 36, 66, 26, 29, 86, 55, 88, 40, 1, 0, 94, 38, 94, 9};
         BinarySearchTree binarySearchTree = new BinarySearchTree();
         binarySearchTree.plantBinaryTree(arrayOne);
@@ -16,9 +28,7 @@ public class Main {
         for (int r : arrayTwo)
             if (binarySearchTree.isLeafValueAvailable(binarySearchTree.getRoot(), r))
                 results.add(r);
-/*
-                System.out.printf("%s > exist \n", r);
-*/
-
     }
+
+
 }
