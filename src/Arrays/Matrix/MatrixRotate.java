@@ -45,7 +45,7 @@ public class MatrixRotate {
 
     }
 
-    private static void clockwiseRotate(int[][] mat, int top, int bottom, int left, int right) {
+    private static void clockwiseRotate(int[][] arr, int top, int bottom, int left, int right) {
 
         int prev, curr;
 
@@ -56,12 +56,63 @@ public class MatrixRotate {
         bottom - ending column index
         i - iterator
         */
+        //rotate first row
+        //print the top
+        // output > 1, 2, 3, 4, 5
+        prev = arr[top + 1][left];
+        //shift to top
+        for (int i = left; i <= right; i++) {
+            curr = arr[top][i];
+            arr[top][i] = prev;
+            prev = curr;
+        }
+        top++;
+        if (top > bottom) {
+            return;
+        }
+        // move to right
+        for (int i = top; i <= bottom; i++) {
+            curr = arr[i][right];
+            arr[i][right] = prev;
+            prev = curr;
 
 
+        }
+        right--;
+        if (left > right) {
+            return;
+        }
+
+        // move bottom
+        for (int i = right; i >= left; i--) {
+            curr = arr[bottom][i];
+            arr[bottom][i] = prev;
+            prev = curr;
+        }
+        bottom--;
+        if (top > bottom) {
+            return;
+        }
+
+        //move to the left column
+        //output> 13 14 15 16
+        for (int i = bottom; i >= top; i--) {
+
+            curr = arr[i][left];
+            if (curr != prev) {
+                arr[i][left] = prev;
+                prev = curr;
+
+            }
+
+        }
+        left++;
+
+        clockwiseRotate(arr, top, bottom, left, right);
         // Print rotated matrix
-        for (int i = 0; i < right; i++) {
-            for (int j = 0; j < top; j++)
-                System.out.print(mat[i][j] + " ");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++)
+                System.out.print(arr[i][j] + " ");
             System.out.print("\n");
         }
     }
