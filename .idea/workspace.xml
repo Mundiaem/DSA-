@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b42dfca0-e072-4f08-a479-48774fef3349" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/Arrays/MatrixArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST/Node.java" afterDir="false" />
+>>>>>>> 88315b5d35b5f0d63dc95a24babd563a7f276cb6
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +38,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -44,6 +51,19 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+>>>>>>> 88315b5d35b5f0d63dc95a24babd563a7f276cb6
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -66,9 +86,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655317476234</updated>
+<<<<<<< HEAD
       <workItem from="1655317477458" duration="3693000" />
       <workItem from="1655713393125" duration="48000" />
       <workItem from="1655713472619" duration="3792000" />
+=======
+      <workItem from="1655317477458" duration="3299000" />
+      <workItem from="1655346820913" duration="429000" />
+      <workItem from="1655374363046" duration="4999000" />
+      <workItem from="1655461086686" duration="3301000" />
+      <workItem from="1655493717965" duration="1216000" />
+      <workItem from="1655526436589" duration="2455000" />
+      <workItem from="1655567351886" duration="4789000" />
+      <workItem from="1655610333655" duration="320000" />
+      <workItem from="1655645416609" duration="98000" />
+      <workItem from="1655648423772" duration="3350000" />
+>>>>>>> 88315b5d35b5f0d63dc95a24babd563a7f276cb6
     </task>
     <servers />
   </component>
@@ -85,5 +118,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
