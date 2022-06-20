@@ -45,80 +45,24 @@ public class MatrixRotate {
 
     }
 
-    private static void clockwiseRotate(int[][] arr, int top, int bottom, int left, int right) {
-        if (arr == null || arr.length == 0 || left > right) {
-            return;
-        }
+    private static void clockwiseRotate(int[][] mat, int top, int bottom, int left, int right) {
+
         int prev, curr;
+
         /*
-
+        left - Starting row index
+        right - ending row index
         top - starting column index
-        bottom - ending column index;
-        left - starting row index
-        right - end of the row index
-        * */
-        while (left < right && top < bottom) {
-            if (left + 1 == right || top + 1 == bottom) {
-                break;
-            }
-            //Store the first element of the next
-            // row, this element will replace
-            // first element of current row
-
-            prev = arr[top + 1][left];
-
-            // Move elements of first row
-            // from the remaining rows
-
-            for (int i = top; i < right; i++) {
-                curr = arr[left][i];
-                arr[left][i] = prev;
-                prev = curr;
-            }
-            left++;
-
-            //Move elements of last column
-            // from the remaining column
-
-            for (int i = left; i < right; i++) {
-                curr = arr[i][bottom - 1];
-                arr[i][bottom - 1] = prev;
-                prev = curr;
-            }
-            bottom--;
-
-            // Move elements of last row
-            // from the remaining rows
-
-            if (left < right) {
-                for (int i = bottom - 1; i >= top; i--) {
-                    curr = arr[right - 1][i];
-                    arr[right - 1][i] = prev;
-                    prev = curr;
-                }
-            }
-            right--;
+        bottom - ending column index
+        i - iterator
+        */
 
 
-            // Move elements of first column
-            // from the remaining rows
-            if (top < bottom) {
-                for (int i = right - 1; i >= left; i--) {
-                    curr = arr[i][top];
-                    arr[i][top] = prev;
-                    prev = curr;
-                }
-            }
-            top++;
-
-
-            // print rotated matrix
-            for (int i = 0; i < left; i++) {
-                for (int j = 0; j < top; j++) {
-                    System.out.print(arr[i][j] + " ");
-                    System.out.print("\n");
-                }
-            }
+        // Print rotated matrix
+        for (int i = 0; i < right; i++) {
+            for (int j = 0; j < top; j++)
+                System.out.print(mat[i][j] + " ");
+            System.out.print("\n");
         }
     }
 }
