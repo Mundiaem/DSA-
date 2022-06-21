@@ -1,5 +1,7 @@
 package Arrays.Matrix;
 
+import java.util.Arrays;
+
 public class MatrixRotate {
 
     //rotating matrix by 90
@@ -115,5 +117,71 @@ public class MatrixRotate {
                 System.out.print(arr[i][j] + " ");
             System.out.print("\n");
         }
+    }
+
+    /*
+     * n-place rotate matrix by 180 degrees  Given a square matrix, rotate the matrix by 180 degrees in a
+     *  clockwise direction. The transformation should be done in-place
+     * in quadratic time.
+     * */
+    public static void rotateBy180Degrees() {
+        int[][] arr = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+        int[][] arr1 = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+
+        System.out.println("------------ Even -------------------");
+        rotateBy180ReverseOrder(arr);
+        System.out.println("------------ Odd -------------------");
+        rotateBy180ReverseOrder(arr1);
+
+    }
+
+    // Input:
+    //
+    //1   2   3   4
+    //5   6   7   8
+    //9   10  11  12
+    //13  14  15  16
+    //
+    //Output:
+    //
+    //16  15  14  13
+    //12  11  10  9
+    //8   7   6   5
+    //4   3   2   1
+    // .
+    //Time complexity
+    // O(N*2)
+    // Space Complexity
+    // O(1)
+    // In-place rotate it by 180 degrees in an anti-clockwise direction
+    private static void rotateBy180ReverseOrder(int[][] arr) {
+        // best case
+        if (arr == null || arr.length == 0) {
+            return;
+        }
+        int n = arr.length;
+
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = 0; j < n; j++) {
+                int temp = arr[i][j];
+                arr[i][j] = arr[n - i - 1][n - j - 1];
+                arr[n - i - 1][n - j - 1] = temp;
+
+            }
+        }
+
+        if (n % 2 == 1) {
+            for (int j = 0; j < n / 2; j++) {
+                int temp = arr[n / 2][j];
+                arr[n / 2][j] = arr[n / 2][n - j - 1];
+                arr[n / 2][n - j - 1] = temp;
+            }
+        }
+
+        for (int[] r : arr) {
+            System.out.println(Arrays.toString(r));
+        }
+
+
     }
 }
