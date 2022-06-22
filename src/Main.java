@@ -2,9 +2,7 @@ import Arrays.Matrix.MatrixArray;
 import Arrays.Matrix.MatrixRotate;
 import BST.BinarySearchTree;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,6 +32,37 @@ public class Main {
         int[] arrayTwo = {38, 16, 98, 48, 10, 76, 59, 26, 24, 27, 88, 99, 39, 45, 89, 23, 76, 46, 86, 51, 5, 58, 74, 40, 42, 36, 20, 81, 13, 94, 13, 60, 27, 1, 0, 24, 98, 82, 70, 93, 26, 64, 73, 83, 4, 31, 20, 0, 57, 40, 40, 19, 49, 2, 39, 6, 39, 69, 93, 72, 78, 90, 14, 88, 45, 78, 54, 54, 55, 79};
         for (int r : arrayTwo)
             if (binarySearchTree.isLeafValueAvailable(binarySearchTree.getRoot(), r)) results.add(r);
+    }
+
+    private static void hashM() {
+        // Map is an interface and HashMap is a class that implements Map
+        // linkedHashMap> maintains the order of insertion
+        // Hashmap does not maintain the order
+        //
+        Map<String,String> hashMap= new HashMap<>();
+        Map<String, String>link= new LinkedHashMap<>();
+        // list > author - numbers of books> int
+        // o> {'author': 10}, {'author': 10}
+        // Author > author_name , no_of_book
+        // List<Author> listBooks= new ArrayList<>();
+        // quickSort > quickSort(List<Author>listAuthor)
+        // convert >| array
+        // problem > loss the order of the data
+        // > keys should be unique
+        // Map<String, Integer> mapAuthor= new LinkedHashMap<>();
+        // for(Author a: listAuthor){
+        // mapAuthor.put(a.author_name, a.no_of_book);
+        // }
+        /*
+        1. use the list
+        2. use inbuilt methods to sort the list objects
+        3. implements interfaces to sort the objects
+          a. comparator
+
+        * */
+
+
+
     }
 
 
