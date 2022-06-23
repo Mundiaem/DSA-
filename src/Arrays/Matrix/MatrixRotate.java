@@ -184,4 +184,100 @@ public class MatrixRotate {
 
 
     }
+
+    public static void rotate90Clockwise() {
+        int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        rotate90Clockwise(arr);
+
+
+    }
+
+    private static void rotate90Clockwise(int[][] arr) {
+        //input > int [][] arr= [1,2,3]
+        //                      [4,5,6]
+        //                      [7,8,9]
+
+        //output>               [7,4,1]
+        //                      [8,5,2]
+        //                      [9,6,3].
+
+        int N = arr.length;
+        for (int i = 0; i < N / 2; i++) {
+            for (int j = 0; j < N - i - 1; j++) {
+
+                // rotate clock wise
+
+                int temp = arr[i][j]; // first > 1
+                arr[i][j] = arr[N - 1 - j][i]; // 3-1-0>[2][0] > 7
+                arr[N - 1 - j][i] = arr[N - 1 - i][N - 1 - j]; // 3-1-0[2] | 3-1-0 |[2] >9
+                arr[N - 1 - i][N - 1 - j] = arr[j][N - 1 - i]; //arr[0][2]
+                arr[j][N - 1 - i] = temp; // arr[0][2]= arr[0][0];
+
+
+            }
+        }
+
+        System.out.print("[");
+        for (int i = 0; i < N; i++) {
+            System.out.print("{");
+            for (int j = 0; j < N; j++) {
+
+                System.out.print(" " + arr[i][j] + " ");
+
+            }
+            System.out.print("}");
+            System.out.println();
+
+        }
+        System.out.print("]");
+    }
+//input > int[][] arr = {{1, 2, 3, 4},
+//                {5, 6, 7, 8},
+//                {9, 10, 11, 12},
+//                {13, 14, 15, 16}};
+//output > 13 9 5 1
+//         14 10 6 2
+//         15 11 7 3
+//         16 12 8 4                 .
+    public static void rotateMatrix90ClockwiseMethod2() {
+        int[][] arr = {{1, 2, 3, 4},
+                {5, 6, 7, 8},
+                {9, 10, 11, 12},
+                {13, 14, 15, 16}};
+        rotateMatrix90ClockwiseMethod2(arr);
+    }
+
+    /*
+     * 1. This approach is made from a pattern after rotating the matrix by 90
+     * - consider
+     * => [ {00, 01,02}
+     *    {10, 11, 12}
+     *    {20, 21, 22}]
+     *
+     * =>  [ { 20, 10, 00},
+     *      { 21, 11, 01},
+     *      { 22, 12, 02}]
+     * => after rotating 90 degrees clockwise
+     * 20, 10, 00 - current_row_index = 0 i= 2, 1, 0
+     * 21, 11, 01 - current_row_index = 1 i= 2, 1, 0
+     * 22, 12, 02 - current_row_index = 2 i= 2, 1, 0
+     *
+     * observation
+     * for every row, decreasing row index i there is a constant column index j
+     * such that j= current_row_index
+     * */
+    private static void rotateMatrix90ClockwiseMethod2(int[][] arr) {
+        int n = arr.length;
+        System.out.print("[");
+        for (int j = 0; j < n; j++) {
+
+            for (int i = n - 1; i >= 0; i--) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+
+
+        }
+        System.out.print("]");
+    }
 }

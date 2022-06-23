@@ -21,7 +21,9 @@ public class Main {
         //MatrixArray.matrixSpiralRecursive();
 
         //MatrixRotate.rotatingMatrix();
-        MatrixRotate.rotateBy180Degrees();
+        //MatrixRotate.rotateBy180Degrees();
+       // MatrixRotate.rotate90Clockwise();
+        MatrixRotate.rotateMatrix90ClockwiseMethod2();
 
     }
 
