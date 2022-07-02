@@ -1,6 +1,7 @@
 import Arrays.Matrix.MatrixArray;
 import Arrays.Matrix.MatrixRotate;
 import BST.BinarySearchTree;
+import collectionframework.list.ArrayListClass;
 
 import java.util.*;
 
@@ -21,7 +22,9 @@ public class Main {
         //MatrixRotate.rotatingMatrix();
         //MatrixRotate.rotateBy180Degrees();
        // MatrixRotate.rotate90Clockwise();
-        MatrixRotate.rotateMatrix90ClockwiseMethod2();
+        //MatrixRotate.rotateMatrix90ClockwiseMethod2();
+
+        ArrayListClass.implementationOfArrayList();
 
     }
 
