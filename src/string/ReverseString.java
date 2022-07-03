@@ -1,4 +1,5 @@
 package string;
+
 //https://www.geeksforgeeks.org/print-words-string-reverse-order/?ref=lbp
 //https://www.geeksforgeeks.org/reverse-a-string-in-java/
 //https://www.geeksforgeeks.org/string-data-structure/?ref=gcse#Pattern
@@ -21,6 +22,12 @@ public class ReverseString {
         stringReverseImp1();
         System.out.println("Reverse by byte ");
         stringReverseImp2();
+        System.out.println("Reverse using StringBuffer ");
+        reverseStringImpl3();
+        System.out.println("Reverse using index  ");
+        reverseStringImpl4();
+        System.out.println("Reverse using swap  ");
+        reverseStringImpl5();
     }
 
     /*
@@ -71,5 +78,51 @@ public class ReverseString {
             result[i] = strAsByteArray[strAsByteArray.length - i - 1];
         }
         System.out.println(new String(result));
+    }
+
+    private static void reverseStringImpl3() {
+        String ms = "Google";
+        StringBuffer stringBufferReverse = new StringBuffer(ms);
+        stringBufferReverse.reverse();
+        System.out.println(stringBufferReverse);
+    }
+
+    private static void reverseStringImpl4() {
+        String input = "Software Engineer";
+        char[] inputArray = input.toCharArray();
+        for (int i = inputArray.length - 1; i >= 0; i--) {
+            System.out.print(inputArray[i]);
+
+        }
+        System.out.println();
+    }
+
+    /*
+    * 1. Set the left index equal to 0 and right
+       index equal to the length of the string -1.
+    2. Swap the characters of the start index
+       scanning with the last index scanning
+       one by one. After that, increase the left
+       index by 1 (left++) and decrease the right
+       by 1 i.e., (right--) to move on to the next
+       characters in the character array .
+    3. Continue till left is less than or equal to
+       the right.*/
+    private static void reverseStringImpl5() {
+        String input = "I am a software Engineer";
+        char[] inputArray = input.toCharArray();
+        int left, right = inputArray.length - 1;
+
+        for (left = 0; left < right; left++, right--) {
+            //swap the elements of left and right
+            char s = inputArray[left];
+            inputArray[left] = inputArray[right];
+            inputArray[right] = s;
+        }
+
+        input = String.valueOf(inputArray);
+        System.out.println(input);
+
+
     }
 }

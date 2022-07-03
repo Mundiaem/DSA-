@@ -1,16 +1,10 @@
-import Arrays.Matrix.MatrixArray;
-import Arrays.Matrix.MatrixRotate;
-import BST.BinarySearchTree;
-import collectionframework.list.ArrayListClass;
-import string.ReverseString;
-import string.StringBufferStringBuilder;
-
-
 import BST.SearchItemX;
-import collectionframework.list.StackClass;
-import collectionframework.list.VectorClass;
+import string.ReverseString;
+import string.ReverseWord;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,18 +22,19 @@ public class Main {
 
         //MatrixRotate.rotatingMatrix();
         //MatrixRotate.rotateBy180Degrees();
-       // MatrixRotate.rotate90Clockwise();
+        // MatrixRotate.rotate90Clockwise();
         //MatrixRotate.rotateMatrix90ClockwiseMethod2();
         //ArrayListClass.implementationOfArrayList();
 
         //ArrayListClass.implementationOfArrayList();
         //StringBufferStringBuilder.stringImplementation();
-        ReverseString.stringReverse();
+        //ReverseString.stringReverse();
         //VectorClass.vectorImplementation();
-        StackClass.stackImplementation();
+        // StackClass.stackImplementation();
+
+        ReverseWord.reverseWord();
 
     }
-
 
 
     private static void hashM() {
@@ -47,8 +42,8 @@ public class Main {
         // linkedHashMap> maintains the order of insertion
         // Hashmap does not maintain the order
         //
-        Map<String,String> hashMap= new HashMap<>();
-        Map<String, String>link= new LinkedHashMap<>();
+        Map<String, String> hashMap = new HashMap<>();
+        Map<String, String> link = new LinkedHashMap<>();
         // list > author - numbers of books> int
         // o> {'author': 10}, {'author': 10}
         // Author > author_name , no_of_book
@@ -68,7 +63,6 @@ public class Main {
           a. comparator
 
         * */
-
 
 
     }
