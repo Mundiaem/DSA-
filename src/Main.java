@@ -1,9 +1,6 @@
 import BST.SearchItemX;
-import challange.cdone.StringDictSeg;
-import challange.cdone.SumOfValue;
-import string.ReverseString;
-import string.ReverseWord;
-import challange.cdone.binaryTree.BinaryTree;
+import string.RegularExpression;
+
 
 import java.util.*;
 
@@ -38,8 +35,8 @@ public class Main {
         //ReverseString.stringReverse();
         //System.out.println("Sum of value exits: "+SumOfValue.hasNumberSunOfValues() )
         //BinaryTree.generateBinaryTree();;
-        StringDictSeg. findSegStringDict()
-        ;
+        //StringDictSeg. findSegStringDict();
+        RegularExpression.implementPatternMatching();
 
     }
 
