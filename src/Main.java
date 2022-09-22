@@ -1,4 +1,4 @@
-import Graph.ParallelCourse;
+import BST.SearchItemX;
 import string.RegularExpression;
 
 
@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-       // int[] results = new SearchItemX().qualifiedStudents();
+        int[] results = new SearchItemX().qualifiedStudents();
         // System.out.println(Arrays.toString(results));
 //        int[] results= new BST.SearchItemX().qualifiedStudents();
 //        System.out.println(Arrays.toString(results));
@@ -36,9 +36,7 @@ public class Main {
         //System.out.println("Sum of value exits: "+SumOfValue.hasNumberSunOfValues() )
         //BinaryTree.generateBinaryTree();;
         //StringDictSeg. findSegStringDict();
-        //RegularExpression.implementPatternMatching();
-
-        ParallelCourse.implementation();
+        RegularExpression.implementPatternMatching();
 
     }
 
