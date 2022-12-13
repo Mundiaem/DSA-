@@ -1,4 +1,5 @@
 import BST.SearchItemX;
+import string.MinimumPartitionPalindrome;
 import string.RegularExpression;
 
 
@@ -36,7 +37,8 @@ public class Main {
         //System.out.println("Sum of value exits: "+SumOfValue.hasNumberSunOfValues() )
         //BinaryTree.generateBinaryTree();;
         //StringDictSeg. findSegStringDict();
-        RegularExpression.implementPatternMatching();
+        //RegularExpression.implementPatternMatching();
+        MinimumPartitionPalindrome.implMinPartition();
 
     }
 
