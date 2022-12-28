@@ -1,5 +1,4 @@
-import BST.SearchItemX;
-import string.MinimumPartitionPalindrome;
+import Graph.ParallelCourse;
 import string.RegularExpression;
 
 
@@ -8,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        int[] results = new SearchItemX().qualifiedStudents();
+       // int[] results = new SearchItemX().qualifiedStudents();
         // System.out.println(Arrays.toString(results));
 //        int[] results= new BST.SearchItemX().qualifiedStudents();
 //        System.out.println(Arrays.toString(results));
@@ -38,7 +37,8 @@ public class Main {
         //BinaryTree.generateBinaryTree();;
         //StringDictSeg. findSegStringDict();
         //RegularExpression.implementPatternMatching();
-        MinimumPartitionPalindrome.implMinPartition();
+
+        ParallelCourse.implementation();
 
     }
 
