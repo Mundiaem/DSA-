@@ -147,4 +147,11 @@ public class ReverseString {
             ca[j] = tmp;
         }
     }
+    //https://leetcode.com/problems/reverse-words-in-a-string-ii/description/
+    //https://leetcode.com/problems/sort-transformed-array/description/
+    //https://leetcode.com/problems/maximum-population-year/description/
+    //https://leetcode.com/problems/minimum-size-subarray-sum/description/
+    //https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/description/
+    //https://leetcode.com/problems/jump-game-iii/description/
+    //https://leetcode.com/problems/jump-game-ii/description/
 }
