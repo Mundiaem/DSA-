@@ -8,6 +8,10 @@ package Arrays.Matrix;
  */
 
 public class MatrixArray {
+    public static void main(String[] args) {
+        printMatrixInOrder();
+        matrixSpiralRecursive();
+    }
     public static void matrix() {
         //columns > subjects > maths, English, Kiswahili
         // rows > students
