@@ -56,7 +56,7 @@ public class ParallelCourse {
         int[][] courses = {{1, 3}, {2, 3}};
         int N = 3;
         System.out.println(" minimum number of semesters: topological sort + BFS : " + minimumNumberOfSemestersTopologicalSortBFS(courses, N));
-        System.out.println(" minimum number of semesters: DFS + Longest Path : " + minimumNoOfSemestersDFSLongestPath(N, courses));
+        //System.out.println(" minimum number of semesters: DFS + Longest Path : " + minimumNoOfSemestersDFSLongestPath(N, courses));
 
     }
 
@@ -92,6 +92,7 @@ public class ParallelCourse {
        // an array called indegree[]
         int[] inDegree = new int[n + 1];
         for (int[] c : courses) {
+            //[[1,3],[2,3]]
             coursesPrerequisite.computeIfAbsent(c[0], (lst -> new ArrayList<>())).add(c[1]);
           // calculate all the  indegree
             ++inDegree[c[1]];
@@ -102,7 +103,6 @@ public class ParallelCourse {
         for (int i = 1; i <= n; i++) {
             if (inDegree[i] == 0) {
                 System.out.println("in degree of 0 :  " + i);
-
                 g.offer(i);// 1,2
             }
         }
@@ -115,9 +115,7 @@ public class ParallelCourse {
                 // if indegree[] exist in the graph map key continue
                 if (!coursesPrerequisite.containsKey(c)) {
                     System.out.println("Does not contain:  " + c);
-
                     continue;
-
                 }
                 System.out.println(" queue :  " + c);
             // Dequeue the element at the front from the queue
@@ -187,7 +185,12 @@ public class ParallelCourse {
         return depth[i];
 
     }
+    public static void main(String[] args) {
+implementation();
+    }
 }
+
+
 /*
 * https://iq.opengenus.org/depth-first-search/
 * https://iq.opengenus.org/topological-sorting-dfs/

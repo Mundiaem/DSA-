@@ -13,4 +13,8 @@ package Graphs;
 * https://algorithms.tutorialhorizon.com/number-of-islands/
 * */
 public class MaxNumberOfLand {
+
+    public static void main(String[] args) {
+
+    }
 }

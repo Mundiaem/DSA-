@@ -41,7 +41,6 @@ public class CourseSchedule {
         while (!queue.isEmpty()){
             int node = queue.poll();
             numberOfNodeVisited++;
-
             for (int it: adj.get(node)){
               inDegree[it]--;
               if(inDegree[it]==0){
